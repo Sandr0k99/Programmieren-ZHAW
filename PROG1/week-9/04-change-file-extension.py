@@ -24,7 +24,7 @@ def change_file_extensions(path_to_folder):
 
 
 # Path to your folder (replace with your actual folder path)
-path_to_folder = './music_extension_example'
+path_to_folder = 'music_extension_example'
 
 # Call the function to change the file extensions
 change_file_extensions(path_to_folder)
