@@ -1,4 +1,25 @@
 class Person:
+    """
+       A class to represent a Person.
+
+       ...
+
+       Attributes
+       ----------
+       name : str
+           name of person
+       age: int
+           age of person
+       hair_color : str
+           hair color of person
+
+       Methods
+       -------
+       speak(text):
+            person speaking text
+       birthday():
+            adds 1 to the age of the person
+    """
     def __init__(self, name, age, hair_color):
         self.name = name
         self.age = age

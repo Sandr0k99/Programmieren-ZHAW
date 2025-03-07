@@ -1,9 +1,36 @@
 class Document:
+    """
+       A class to represent a Docuent.
+
+       ...
+
+       Attributes
+       ----------
+       title : str
+           title of document
+       owner : str
+           name of owner
+       """
     def __init__(self, title, owner):
         self.title = title
         self.owner = owner
 
 class Student:
+    """
+       A class to represent a Student.
+
+       ...
+
+       Attributes
+       ----------
+       name : str
+           name of student
+
+       Methods
+       -------
+       add_document(document):
+            Appends doc to student
+    """
     def __init__(self, name):
         self.name = name
         self.documents = []
@@ -12,6 +39,23 @@ class Student:
         self.documents.append(document)
 
 class Table:
+    """
+       A class to represent a Table.
+
+       ...
+
+       Attributes
+       ----------
+       table_number : int
+           number of table
+       students: Student
+           students at table
+
+       Methods
+       -------
+       add_students(student1, student2):
+            Adds students to table
+    """
     def __init__(self, table_number):
         self.table_number = table_number
         self.students = []
@@ -20,6 +64,21 @@ class Table:
         self.students.extend([student1, student2])
 
 class Blackboard:
+    """
+       A class to represent a Blackboard.
+
+       ...
+
+       Attributes
+       ----------
+       content : str
+           content of Blackboard
+
+       Methods
+       -------
+       write(text):
+            Write text on blackboard
+    """
     def __init__(self):
         self.content = ""
 
@@ -27,6 +86,17 @@ class Blackboard:
         self.content = text
 
 class Teacher:
+    """
+       A class to represent a Teacher.
+
+       ...
+
+       Attributes
+       ----------
+       name : str
+           name of teacher
+
+    """
     def __init__(self, name):
         self.name = name
 
